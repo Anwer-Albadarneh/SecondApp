@@ -3,7 +3,8 @@ import './App.css';
 import Header from './header';
 import Main from './main';
 import {  BrowserRouter as Browse , Routes, Route } from 'react-router-dom';
-import food from './food';
+import foodItems from './foodItems';
+
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
   <Browse>
     <Routes>
     <Route exact path="/" Component={Main} />
-    <Route exact path="/food" Component={food} />
+    <Route exact path="/food" Component={foodItems} />
     </Routes>
   </Browse>
     </>
